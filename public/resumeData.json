@@ -3,7 +3,7 @@
       "name": "Alex Chigas",
       "occupation": "Full stack web-devloper and model",
       "description": "The Model Developer: Where Zoolander collided with a programmer!",
-      "image": "headshot.png",
+      "image": "Profile.JPG",
       "bio": "My name is Alex, I'm a Full Stack Web Developer. Currently I'm working as a volleyball coach! ",
       "contactmessage": "Let's connect!",
       "email": "Achigas34@gmail.com",
@@ -20,22 +20,26 @@
         {
           "name": "facebook",
           "url": "https://www.facebook.com/achigas",
-          "className": "fa fa-facebook"
+          "prefix": "fa",
+          "className": "facebook"
         },
         {
           "name": "linkedin",
-          "url": "https://www.linkedin.com/in/saajansangha/",
-          "className": "fa fa-linkedin"
+          "url": "x",
+          "prefix": "fa",
+          "className": "faLinkedin"
         },
         {
           "name": "instagram",
           "url": "https://www.instagram.com/alexchigas/",
-          "className": "fa fa-instagram"
+          "prefix": "fa",
+          "className": "faInstagram"
         },
         {
           "name": "github",
           "url": "http://github.com/Achigas",
-          "className": "fa fa-github"
+          "prefix": "fa",
+          "className": "faGithub"
         }
       ]
     },

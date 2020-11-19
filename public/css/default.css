@@ -590,7 +590,7 @@ e. Others
  --------------------------------------------------------------- */
  .row {
     width: 96%;
-    max-width: 1020px;
+    max-width: 1500px;
     margin: 0 auto;
  }
  /* fixed width for IE8 */

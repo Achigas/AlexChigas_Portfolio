@@ -1,4 +1,10 @@
 import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab, faGithubAlt } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faLinkedin, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
+
+library.add(fab, faFacebook, faLinkedin, faInstagram, faGithub)
 
 class Header extends Component {
   render() {
@@ -8,9 +14,9 @@ class Header extends Component {
       var occupation= this.props.data.occupation;
       var description= this.props.data.description;
       var city= this.props.data.address.city;
-      var networks= this.props.data.social.map(function(network){
-        return <li key={network.name}><a href={network.url}><i className={network.className}></i></a></li>
-      })
+      // var networks= this.props.data.social.map(function(network){
+      //   return <li key={network.name}><a href={network.url}><FontAwesomeIcon icon={{network.className}}/></a></li>
+// })
     }
 
     return (
@@ -37,7 +43,27 @@ class Header extends Component {
             <h3>I'm a {city} based <span>{occupation}</span>. {description}.</h3>
             <hr />
             <ul className="social">
-               {networks}
+               <li key="facebook">
+                  <a href="https://www.facebook.com/achigas">
+                     <FontAwesomeIcon icon={faFacebook}/>
+                  </a>
+               </li>
+               <li key="linkedin">
+                  <a href="https://www.linkedin.com/in/alex-chigas-0443b816/">
+                     <FontAwesomeIcon icon={faLinkedin}/>
+                  </a>
+               </li>
+               <li key="instagram">
+                  <a href="https://www.instagram.com/alexchigas">
+                     <FontAwesomeIcon icon={faInstagram}/>
+                  </a>
+               </li>
+               <li key="github">
+                  <a href="https://www.github.com/Achigas">
+                     <FontAwesomeIcon icon={faGithub}/>
+                  </a>
+               </li>
+          
             </ul>
          </div>
       </div>
